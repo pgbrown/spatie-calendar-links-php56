@@ -13,7 +13,7 @@ class Yahoo implements Generator
 
         $url .= '&title='.urlencode($link->title);
         $url .= '&st='.$link->from;
-        $url .= '&dur='.str_pad($link->to, 4, '0', STR_PAD_LEFT);
+        $url .= '&dur='.str_pad($link->duration, 4, '0', STR_PAD_LEFT);
 
         if ($link->description) {
             $url .= '&desc='.urlencode($link->description);

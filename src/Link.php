@@ -81,6 +81,18 @@ class Link
     }
 
     /**
+     * @param string $duration
+     *
+     * @return $this
+     */
+    public function duration($duration)
+    {
+        $this->duration = $duration;
+
+        return $this;
+    }
+
+    /**
      * @param string $address
      *
      * @return $this
